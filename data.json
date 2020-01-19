@@ -12,6 +12,9 @@
    {
       "task": "saya harus selesaikan materi nodejs",
       "complete": false,
-      "tag": []
+      "tag": [
+         "ngoding",
+         "nodejs"
+      ]
    }
 ]

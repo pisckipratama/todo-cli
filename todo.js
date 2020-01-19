@@ -70,7 +70,16 @@ switch (myArgv[2]) {
         break;
 
     case 'tag':
-        console.log('ini tag');
+        if (!myArgv[3]) {
+            console.log('Tolong masukkan id task nya!');
+            process.exit(0);
+        } else {
+            for (let i = 4; i < myArgv.length; i++) {
+                data[myArgv[3]-1].tag.push(myArgv[i]);
+            }
+            console.log(`Tag '${data[myArgv[3]-1].tag}' telah ditambahkan ke daftar '${data[myArgv[3]-1].task}'`)
+            fs.writeFileSync('data.json', JSON.stringify(data, null, 3));
+        }
         break;
 
     case 'uncomplete':
