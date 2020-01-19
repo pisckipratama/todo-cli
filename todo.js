@@ -17,7 +17,7 @@ $ node todo.js uncomplete <task_id>
 $ node todo.js list:outstanding  asc|desc
 $ node todo.js list:completed asc|desc
 $ node todo.js tag <task_id> <tag_name_1> <tag_name_2> ... <tag_name_N>
-$ node todo.js list `
+$ node todo.js filter:<tag_name>`
 
 switch (myArgv[2]) {
     case 'add':
