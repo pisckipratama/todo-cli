@@ -78,11 +78,6 @@ switch (myArgv[2]) {
             console.log('Masukkin id task nya bro!');
             process.exit(0);
         } else {
-            // console.log(data[myArgv[3] - 1].complete);
-            // console.log(`"${data[myArgv[3] - 1].task}" status selesai dibatalkan.`);
-            // data[myArgv[3] - 1].complete = false;
-            // fs.writeFileSync('data.json', JSON.stringify(data, null, 3));
-
             if (data[myArgv[3] - 1].complete == false) {
                 console.log(`"${data[myArgv[3] - 1].task}" belum selesai, cari yang sudah selesai.`);
                 process.exit(0);
