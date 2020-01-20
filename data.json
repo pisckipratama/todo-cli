@@ -1,20 +1,24 @@
 [
    {
-      "task": "telpon kasih adinda",
-      "complete": false,
-      "tag": []
-   },
-   {
-      "task": "saya harus selesaikan challange 13",
-      "complete": false,
-      "tag": []
-   },
-   {
-      "task": "saya harus selesaikan materi nodejs",
+      "task": "nonton persib vs hanoi",
       "complete": false,
       "tag": [
-         "ngoding",
-         "nodejs"
+         "persib"
       ]
+   },
+   {
+      "task": "belajar javascript",
+      "complete": true,
+      "tag": []
+   },
+   {
+      "task": "tidur jam 10",
+      "complete": false,
+      "tag": []
+   },
+   {
+      "task": "kerjain challange 12",
+      "complete": true,
+      "tag": []
    }
 ]

@@ -25,7 +25,7 @@ const fs = require('fs');
 
 let tes = fs.readFileSync('data.json', 'utf8');
 
-console.log('sebelum:');
+console.log('real:');
 let arr = JSON.parse(tes);
 for (let i = 0; i < arr.length; i++) {
     console.log(`${i + 1}. ${arr[i].complete ? '[x]' : '[ ]'} ${arr[i].task}`);
@@ -39,11 +39,26 @@ for (let i = 0; i < arr.length; i++) {
 
 // fs.writeFileSync('data.json', JSON.stringify(arr, null, 3));
 
-let id = 1;
+// let id = 4;
 
-arr[id - 1].complete = false;
-console.log('\nsesudah');
+// arr[id - 1].complete = false;
+// console.log('\nsesudah');
 
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(`${i + 1}. ${arr[i].complete ? '[x]' : '[ ]'} ${arr[i].task}`);
+// };
+
+console.log('\nasc:');
 for (let i = 0; i < arr.length; i++) {
-    console.log(`${i + 1}. ${arr[i].complete ? '[x]' : '[ ]'} ${arr[i].task}`);
-};
+    if (arr[i].complete === false) {
+        console.log(`${i + 1}. ${arr[i].complete ? '[x]' : '[ ]'} ${arr[i].task}`)
+    }
+}
+
+console.log('\ndesc');
+for (let j = arr.length - 1; j >= 0; j--) {
+    if (arr[j].complete === false) {
+    console.log(`${j + 1}. ${arr[j].complete ? '[x]' : '[ ]'} ${arr[j].task}`);
+    // console.log(arr[j].task);
+    }
+}
