@@ -150,8 +150,24 @@ switch (myArgv[2]) {
         }
         break;
 
-    case 'help':
     default:
-        console.log(msg);
-        process.exit(0);
+        if (myArgv[2]) {
+            if (myArgv[2].slice(0, 6) === 'filter') {
+                let splitFilter = myArgv[2].split(':');
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i].tag.includes(splitFilter[1])) {
+                        console.log(`${i + 1}. ${data[i].complete ? '[x]' : '[ ]'} ${data[i].task}`);
+                    }
+                }
+                process.exit(0);
+            } else if (myArgv[2] === 'help') {
+                console.log(msg);
+                process.exit(0);
+            } else {
+                console.log('argument not found, see "help"')
+            }
+        } else {
+            console.log(msg);
+            process.exit(0);
+        }
 }

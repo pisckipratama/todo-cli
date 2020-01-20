@@ -1,24 +1,15 @@
 [
    {
-      "task": "nonton persib vs hanoi",
-      "complete": false,
+      "task": "saya akan memasak",
+      "complete": true,
       "tag": [
-         "persib"
+         "masak",
+         "sayur"
       ]
    },
    {
-      "task": "belajar javascript",
-      "complete": true,
-      "tag": []
-   },
-   {
-      "task": "tidur jam 10",
+      "task": "saya akan pergi ke sekolah",
       "complete": false,
-      "tag": []
-   },
-   {
-      "task": "kerjain challange 12",
-      "complete": true,
       "tag": []
    }
 ]
