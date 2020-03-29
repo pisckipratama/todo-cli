@@ -1,15 +1,16 @@
 [
    {
-      "task": "saya akan memasak",
-      "complete": true,
-      "tag": [
-         "masak",
-         "sayur"
-      ]
-   },
-   {
       "task": "saya akan pergi ke sekolah",
       "complete": false,
       "tag": []
+   },
+   {
+      "task": "ngoding js",
+      "complete": false,
+      "tag": [
+         "walah",
+         "hehe",
+         "waduh"
+      ]
    }
 ]

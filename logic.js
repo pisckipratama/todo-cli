@@ -100,3 +100,9 @@ for (let i = 0; i < arr.length; i++) {
 //     }
 //     process.exit(0);
 // }
+
+console.log(parseInt('a'))
+let a = '100';
+
+console.log(Number.isInteger(parseInt(a)));
+console.log('a' > 1);
