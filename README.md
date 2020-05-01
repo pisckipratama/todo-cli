@@ -1,14 +1,8 @@
-# NodeJS Todo
-Create a simple CLI program for listing todo with Node.js
-this program for challange #13 at [Rubicamp](https://rubicamp.com/).
+# Todo CLI
 
-#### List Features Done
-- [x] add task
-- [x] show lists task
-- [x] delete task
-- [x] completing task
-- [x] uncomplete task
-- [x] help for getting information about command
-- [x] filtering and show complete tasks and uncomplete tasks
-- [x] adding tags to tasks
-- [x] showing filter tags
+Simple CLI based app for recording and listing tasks.
+
+For running this app, you should have node.js runtime in your device, and then follow this command
+```node todo.js```
+
+then will appear the menu for use this app.
